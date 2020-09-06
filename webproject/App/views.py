@@ -5,9 +5,6 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'App/home.html')
 
-def services(request):
-    return render(request, 'App/services.html')
-
 def shop(request):
     return render(request, 'App/shop.html')
 

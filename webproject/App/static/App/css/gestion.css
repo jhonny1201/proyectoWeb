@@ -46,15 +46,9 @@ p {
 .page-section {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  /* background: #52c234;  /* fallback for old browsers */
-  /*background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
-
 .section-heading {
-  
   text-transform: uppercase;
 }
 
@@ -63,7 +57,7 @@ p {
   font-size: 1rem;
   font-weight: 800;
   padding-bottom:.5rem;
-  
+
 }
 
 .section-heading .section-heading-lower {
@@ -82,17 +76,11 @@ p {
 }
 
 .bg-faded {
-  /*background-color: rgba(255, 255, 255, 0.85);*/
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 #mainNav {
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-color: rgba(24, 64, 8);
   font-family: 'Raleway';
 }
 
@@ -133,7 +121,8 @@ p {
   padding-right: 2rem;
 }
 
-.intro {
+.intro {  
+  
   position: relative;
 }
 
@@ -146,16 +135,12 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background: #52c234;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: rgba(24, 64, 8);
     color: cornsilk;
     position: absolute;
-   
   }
   .intro .intro-text .intro-button {
-    width: 100%;
+    width: 50%;
     left: 0;
     position: absolute;
     bottom: -2rem;
@@ -171,16 +156,15 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color: rgb(242, 245, 240);
 }
 
 .cta .cta-inner {
-  position: center;
+  position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: rgb(250, 241, 204);
+  background-color: rgba(24, 64, 8);
+  color: cornsilk;
 }
 
 .cta .cta-inner:before {
@@ -191,7 +175,7 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  /*border: 0.25rem solid rgba(255, 255, 255, 0.85);¨*/
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
 }
 
 .cta .cta-innerv {
@@ -246,21 +230,13 @@ p {
 }
 
 .footer {
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: relative;
-  
-
+   background-color: rgba(24, 64, 8, 0.8);
 }
 
 
 
 .btn {
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
 }
 
 
