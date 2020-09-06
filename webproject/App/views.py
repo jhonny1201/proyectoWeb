@@ -11,5 +11,4 @@ def shop(request):
 def contact(request):
     return render(request, 'App/contact.html')
 
-def blog(request):
-    return render(request, 'App/blog.html')
+
