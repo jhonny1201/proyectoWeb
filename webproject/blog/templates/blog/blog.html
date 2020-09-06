@@ -3,5 +3,21 @@
 {% block title %}Blog{% endblock %}
 
 {% block content %}
+    {% for category in categories %}
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro" style="padding-bottom: 15rem; position: center;">
+                
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="padding-bottom: 15rem;">
+                <h2 class="section-heading mb-4" >
+                    <span class="section-heading-lower">{{category.name}}</span>
+                    <span class="section-heading-upper">{{category.description}}</span>
+                </h2>
+                <p class="mp-3"></p>
+                </div>
+            </div>
+            </div>
+        </section>
+    {% endfor %}
 
 {% endblock %}
