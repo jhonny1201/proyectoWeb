@@ -13,49 +13,49 @@
 </head>
 
 <body>
-
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      
-        <span class="site-heading-lower">{% block breadcrumb %}Gestión de Pedidos{% endblock %}</span>
-      </h1>
-
-
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">Gestión de Pedidos</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item {% if request.path == '/' %} active {% endif %}px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
-          </li>
-          <li class="nav-item {% if request.path == '/servicios/' %} active {% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
-          </li>
-          <li class="nav-item {% if request.path == '/tienda/' %} active {% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'shop' %}">Tienda</a>
-          </li>
-          <li class="nav-item {% if request.path == '/contacto/' %} active {% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Contacto</a>
-          </li>
+    {% block body %}
+        <h1 class="site-heading text-center text-white d-none d-lg-block">
           
-          <li class="nav-item {% if request.path == '/blog/' %} active {% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
-          </li>
-         
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <span class="site-heading-lower">{% block breadcrumb %}Gestión de Pedidos{% endblock %}</span>
+          </h1>
 
- <!-- Contenido cambiante-->
- {% block content %}
-  <!--Contenido cambiante-->
- {% endblock %}
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">Gestión de Pedidos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item {% if request.path == '/' %} active {% endif %}px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
+              </li>
+              <li class="nav-item {% if request.path == '/servicios/' %} active {% endif %} px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+              </li>
+              <li class="nav-item {% if request.path == '/tienda/' %} active {% endif %} px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'shop' %}">Tienda</a>
+              </li>
+              <li class="nav-item {% if request.path == '/contacto/' %} active {% endif %} px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Contacto</a>
+              </li>
+              
+              <li class="nav-item {% if request.path == '/blog/' %} active {% endif %} px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Contenido cambiante-->
+    {% block content %}
+      <!--Contenido cambiante-->
+    {% endblock %}
+  {% endblock body %}
    <!-- Footer -->
     <footer class="footer text-faded text-center py-5">
       <div class="container">

@@ -10,7 +10,7 @@
                 
                 <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="padding-bottom: 15rem;">
                 <h2 class="section-heading mb-4" >
-                    <span class="section-heading-lower">{{category.name}}</span>
+                    <span class="section-heading-lower"><a class="nav-link text-uppercase text-expanded" href="{% url 'topics' category.pk %}">{{category.name}}</a></span>
                     <span class="section-heading-upper">{{category.description}}</span>
                 </h2>
                 <p class="mp-3"></p>
